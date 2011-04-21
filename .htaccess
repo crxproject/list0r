@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^(.+)/$ index.php?dir=$1 [QSA,B]
+</IfModule>
